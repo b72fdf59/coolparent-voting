@@ -3,6 +3,18 @@ Note that React-Bubble-Chart has an obsolete dependency on d3@3.5ish
 
 It periodically queries the server to update the chart.
 
+The data returned from server has to be in a format of
+
+```
+{...
+  data:
+    [
+      {'_id':John Smith, 'value':3}
+      ...
+    ]
+}
+```
+
 To install:
 
 ```
