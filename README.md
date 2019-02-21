@@ -1,3 +1,4 @@
+![demo](https://github.com/iblcode/coolparent-voting/raw/master/demo.gif)
 Built upon React-TypeScript and React-Bubble-Chart  
 Note that React-Bubble-Chart has an obsolete dependency on d3@3.5ish
 
