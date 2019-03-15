@@ -2,6 +2,7 @@
 interface Parent {
   // each data point is a parent value
   _id: string;
+  _email: string;
   value: number;
 }
 export interface ChartState {
