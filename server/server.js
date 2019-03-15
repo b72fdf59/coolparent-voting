@@ -22,6 +22,9 @@ function scoring(data) {
     parents = [],
     questions;
   for (let individual of data.items) {
+    if (!individual.hasOwnProperty("answers")) {
+      continue;
+    }
     for (let question of individual.answers) {
       if (question.field.id === process.env.FIELD_ROLE_ID) {
         if (question.choice.label === "Student") {
