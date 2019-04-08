@@ -7,6 +7,15 @@ const typeformAPI = typeform.createClient({
 });
 
 const app = express();
+app.use((_, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept, x-auth"
+  );
+  res.header("Access-Control-Expose-Headers", "x-auth");
+  next();
+});
 
 app.get("/api", (_, res) => {
   // will retrieve all forms
@@ -138,4 +147,4 @@ app.get("/coolparent", (_, res) => {
   return res.json({ success: true, data: data });
 });
 
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.SERVER_PORT || 8080);

@@ -6,7 +6,7 @@ class App extends React.Component {
   public render() {
     return (
       <div className="App">
-        <CoolVoteChart url="/api" />
+        <CoolVoteChart url="http://localhost:8080/api" />
       </div>
     );
   }

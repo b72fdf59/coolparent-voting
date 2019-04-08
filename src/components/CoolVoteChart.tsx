@@ -41,6 +41,7 @@ export default class CoolVoteChart extends React.Component<
 
   render() {
     const { data } = this.state;
+    console.log(data);
     if (data.length > 0) {
       return (
         <ReactBubbleChart
