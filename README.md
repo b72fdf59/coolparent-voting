@@ -33,9 +33,3 @@ to build:
 ```
 npm build
 ```
-
-Bundled together is a simple express server. To run:
-
-```
-node server/server.js
-```
