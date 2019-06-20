@@ -55,6 +55,7 @@ export default class CoolVoteChart extends React.Component<
           })}
           legend={false}
           colorLegend={ColorLegend}
+          safeLabel={false}
         />
       );
     }

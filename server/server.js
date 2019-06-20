@@ -21,6 +21,8 @@ app.get("/api", (_, res) => {
   // will retrieve all forms
   typeformAPI.responses.list({ uid: process.env.FORM_ID }).then(data => {
     res.json({ success: true, data: scoring(data) });
+  }).catch(e => {
+    console.log(e);
   });
 });
 
